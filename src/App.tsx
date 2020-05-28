@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import store from "./store";
 import Operand from "./pages/Operand";
+import WebStorage from "./pages/WebStorage";
 import NotFound from "./pages/NotFound";
 
 type RouteProps = {
@@ -16,6 +17,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/operand" component={Operand} />
+          <Route exact path="/webstorage" component={WebStorage} />
           <Route path="/" component={NotFound} />
         </Switch>
       </BrowserRouter>
